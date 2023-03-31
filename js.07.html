@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Digite seu nome</label>
+    <input type="text" id="nome"/>
+
+    <label for="">Idade</label>
+    <input type="text" id="idade"/>
+
+    <label for="">Sobrenome</label>
+    <input type="text" id="sobrenome"/>
+
+    
+    <button id="botao">Registrar</button>
+
+    <h3 id="exibir_nome"></h3>
+    <h3 id="exibir_idade"></h3>
+    <h3 id="exibir_sobrenome"></h3>
+   
+
+<script>
+        var botao = document.getElementById("botao");
+        botao.addEventListener("click", function(){
+            var input = document.getElementById("nome").value;
+            var h3 = document.getElementById("exibir_nome");
+
+            h3.innerHTML = input;
+        });
+</script>
+
+<script>
+    var idade = document.getElementById("botao");
+    botao.addEventListener("click", function(){
+        var input = document.getElementById("idade").value;
+        var h3 = document.getElementById("exibir_idade");
+
+        h3.innerHTML = input;
+    });
+</script>
+
+<script>
+    var sobrenome = document.getElementById("botao");
+    botao.addEventListener("click", function(){
+        var input = document.getElementById("sobrenome").value;
+        var h3 = document.getElementById("exibir_sobrenome");
+
+        h3.innerHTML = input;
+    });
+</script>
+    
+</body>
+</html>
